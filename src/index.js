@@ -8,7 +8,7 @@ function displayTemperature(response) {
 
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.condition.description;
-    humidityElement.innerHTML = '${response.data.temperature.humidity}%';
+    humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
     temperatureElement.innerHTML = temperature;
   }
   
