@@ -54,6 +54,33 @@ function displayTemperature(response) {
     let formattedDay = days[day];
     return `${formattedDay} ${hours}:${minutes}`;
   }
+
+  function displayForecast()  {
+    let forecastElement = document.querySelector("#forecast");
+
+    let days = ['Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
+    let forecastHtml = "";
+
+    days.forEach(function(day) {
+      forecastHtml = 
+      forecastHtml + 
+      `
+                  <div class="weather-forecast-date">
+                  ${day}
+                  </div>
+                  <div class = "weather-forecast-icon">
+                  🌤️
+                  </div>
+                  <div class="weather-forecast-temperature">
+                  
+                  <span class="maximum-temperature">18°</span> 
+                  <span class="minimum-temperature">12°</span>
+      </div>
+      `;
+    });
+
+    forecastElement.innerHTML = forecastHtml;
+  }
   
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", search);
@@ -62,4 +89,6 @@ function displayTemperature(response) {
   let currentDate = new Date();
   
   currentDateELement.innerHTML = formatDate(currentDate);
+displayForecast();
+
   
