@@ -65,6 +65,7 @@ function displayTemperature(response) {
       forecastHtml = 
       forecastHtml + 
       `
+      <div class="weather-forecast-day">
                   <div class="weather-forecast-date">
                   ${day}
                   </div>
@@ -75,6 +76,7 @@ function displayTemperature(response) {
                   
                   <span class="maximum-temperature">18°</span> 
                   <span class="minimum-temperature">12°</span>
+      </div>
       </div>
       `;
     });
