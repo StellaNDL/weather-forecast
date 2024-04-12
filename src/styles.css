@@ -104,6 +104,7 @@ main {
 .weather-forecast-date {
     font-size: 16px;
     color: black;
+    opacity: 0.6;
     font-size: 20px;
 }
 
