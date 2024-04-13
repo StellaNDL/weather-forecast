@@ -1,16 +1,17 @@
 body {
-    background-color: #F9F7FE;
+    background-color: #7F6FD2;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 a {
-    color: #439EFF;
+    color: #813051;
+    opacity: 0.9;
 }
 
 .weather-app {
-    background: white;
+    background: #617AB6;
     max-width: 600px;
     margin: 45px auto;
     padding: 30px;
@@ -19,26 +20,28 @@ a {
 }
 
 header {
-    border-bottom: 1px solid #F9F7FE;
+    border-bottom: 1px  #F9F7FE;
     padding: 0 0 30px 0;
 }
 
 .search-form-input {
-   background-color: #F9F7FE;
-   border: black;
+   background-color: #9291DD;
+   border: none;
    border-radius: 8px;
    width: 80%;
    font-size: 16px;
    padding: 15px 20px;
 }
 .search-form-button {
-    background: #439EFF;
+    background: #9291DD;
     margin-left: 4px;
     padding: 16px 21px;
     border-radius: 8px;
     border: none;
-    color: white;
+    color: grey;
+    opacity: 0.9;
     font-size: 16px;
+    cursor: pointer;
 }
 
 main {
@@ -60,12 +63,13 @@ main {
 .weather-app-details {
     font-size: 16px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0.6;
     font-weight: 500;
 }
 
 .weather-app-details strong {
-    color: #439EFF;
+    color: #272044;
 }
 
 .weather-app-temperature-container {
@@ -103,7 +107,7 @@ main {
 
 .weather-forecast-date {
     font-size: 16px;
-    color: black;
+    color: white;
     opacity: 0.6;
     font-size: 20px;
 }
@@ -121,12 +125,13 @@ main {
 
 .maximum-temperature {
 font-size: 17px;
-color: #439EFF;
+color: #272044;
 }
 
 .minimum-temperature {
   font-size: 14px;
   opacity: 0.6;
+  color: white;
 }
 
 footer {
@@ -134,5 +139,6 @@ footer {
     padding: 30px 0 0 0;
     text-align: center;
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.4);
+    color: white;
+    opacity: 0.6;
 }
